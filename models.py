@@ -45,6 +45,8 @@ class Tag(db.Model):
     posts = db.relationship('Post', secondary= "posts_tags", backref="tags")
 
 
+
+
 def connect_db(app):
     """connect the db"""
 
